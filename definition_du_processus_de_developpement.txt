@@ -1,0 +1,72 @@
+Une fois le problème dégrossi le sujet, comment architecturer votre projet ?
+
+# TOOL
+
+## Tool/WBP_Level_Generator
+
+### VARIABLES
+
+- int seed
+- int scale
+- int amplitude
+- int lineSize
+- int rowSize
+- int xPos
+- int yPos
+
+### WIDGET
+
+- switcher tabs pour échanger entre la génération d’un terrain 2d à l’aide du bruit de perlin et de la génération à l’aide d’un simple random
+- int slider field pour changer “seed”
+- int slider field pour changer “scale”
+- int slider field pour changer “amplitude”
+- int slider field pour changer “lineSize”
+- int slider field pour changer “rowSize”
+- button “Generate” pour créer une nouvelle map
+
+### FUNCTION
+
+- DestroyAllActorsOnScene
+
+- GeneratePerlin2DMap
+- GenerateBrickMap
+- GetRandomHeightBrick
+- CalculatePerlinNoise2D
+
+- GenerateBrickMap
+- GenerateRandomLevel
+- GetRandomWidthBrick
+
+## Tool/EBP_Level_Generator_Menu
+
+- ajouter le blueprint widget à la main menu editor tool bar
+
+# DATA
+
+## Data/S_Level_Bricks
+
+struct pour sauvegarder le template des data tables
+- parent brick class
+
+## Data/DT_Level_HeightBricks
+
+stocke toutes les briques de 1x1 à 1x9
+
+## Data/DT_Level_WidthBricks
+
+stocke toutes les briques de 1x1 à 3x1
+
+# LEVEL DESIGN
+
+- empty parent brick
+- child brick 1x1
+- child brick 1x2
+- child brick 1x3
+- child brick 1x4
+- child brick 1x5
+- child brick 1x6
+- child brick 1x7
+- child brick 1x8
+- child brick 1x9
+- child brick 2x1
+- child brick 3x1
