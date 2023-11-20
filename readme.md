@@ -41,7 +41,7 @@ Une fois le problème dégrossi le sujet, comment architecturer votre projet ?
 
 ### Tool/WBP_Level_Generator
 
-VARIABLES
+#### VARIABLES
 
 - int seed
 - int scale
@@ -51,7 +51,7 @@ VARIABLES
 - int xPos
 - int yPos
 
-WIDGET
+#### WIDGET
 
 - switcher tabs pour échanger entre la génération d’un terrain 2d à l’aide du bruit de perlin et de la génération à l’aide d’un simple random
 - int slider field pour changer “seed”
@@ -61,15 +61,13 @@ WIDGET
 - int slider field pour changer “rowSize”
 - button “Generate” pour créer une nouvelle map
 
-FUNCTION
+#### FUNCTION
 
 - DestroyAllActorsOnScene
-
 - GeneratePerlin2DMap
 - GenerateBrickMap
 - GetRandomHeightBrick
 - CalculatePerlinNoise2D
-
 - GenerateBrickMap
 - GenerateRandomLevel
 - GetRandomWidthBrick
