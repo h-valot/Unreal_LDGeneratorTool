@@ -1,4 +1,4 @@
-[Notion link here](https://onahime.notion.site/UNREAL-LD-TOOL-1b5c23e97b704d3e83a713f27c0f3904?pvs=4)
+[French traduction on Notion](https://onahime.notion.site/UNREAL-LD-TOOL-1b5c23e97b704d3e83a713f27c0f3904?pvs=4)
 
 # FEASIBILITY STUDY
 
